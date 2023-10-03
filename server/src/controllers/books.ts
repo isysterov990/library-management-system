@@ -88,7 +88,8 @@ class BookController {
               index: 'fulltextsearch',
               text: {
                 query,
-                path: ['title', 'authors.name', 'genres']
+                path: ['title', 'authors.name', 'genres'],
+                fuzzy: {}
               }
             }
           }]
